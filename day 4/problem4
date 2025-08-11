@@ -1,0 +1,29 @@
+package day4;
+
+public class assessment2 {
+	import java.io.*;
+	import java.util.*;
+
+	    public static void main(String[] args) {
+
+	        Scanner scanner = new Scanner(System.in);
+
+	        System.out.print("Enter the number of solo (one-way) trips (x): ");
+	        int x = scanner.nextInt();
+
+	        System.out.print("Enter the number of round trips (y): ");
+	        int y = scanner.nextInt();
+
+	        System.out.print("Enter the cost of a Solo Trail pass (s): ");
+	        double s = scanner.nextDouble();
+
+	        System.out.print("Enter the cost of a Roundabout Ride pass (r): ");
+	        double r = scanner.nextDouble();
+
+	        System.out.print("Enter the cost of a Monthly Pass (l): ");
+	        double l = scanner.
+
+	    }
+	}
+
+}
