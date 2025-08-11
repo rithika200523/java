@@ -1,0 +1,46 @@
+package day4;
+
+public class assessment1 {
+
+	public static void main(String[] args) {
+
+		        if (num == 0) return false;
+		        while (num > 0) {
+		            int digit = num % 10;
+		            if (digit != 4 && digit != 7) {
+		                return false;
+		            }
+		            num /= 10;
+		        }
+		        return true;
+		    }
+		    
+
+		        Scanner scanner = new Scanner(System.in);
+		        System.out.print("Enter roll number ");
+		        String rollNumber = scanner.nextLine();
+		        
+		        int luckyDigitCount = 0;
+		        for (int i = 0; i < rollNumber.length(); i++) {
+		            char ch = rollNumber.charAt(i);
+		            if (ch == '4' || ch == '7') {
+		                luckyDigitCount++;
+		            }
+		        }
+		        
+		        if (isLucky(luckyDigitCount)) {
+		            System.out.println("YES");
+		        } else {
+		            System.out.println("NO");
+		        }
+
+		        scanner.close();
+		    }
+		}
+
+		    
+		
+
+	}
+
+}
