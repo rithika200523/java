@@ -1,0 +1,16 @@
+package day4;
+
+public class problem2 {
+	
+	public static void main(String[]args) {
+		int num=10;
+		for(int i=10; i<=num; i=i+2)
+		{
+			System.out.println(i);
+		}
+	}
+	
+}	
+	
+
+
