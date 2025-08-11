@@ -1,0 +1,26 @@
+package day5;
+
+import java.util.Scanner;
+
+public class problem5 {
+	
+	public static void main(String[] args) {	    
+		    int[] num={15, 42, 7, 89, 23, 4};   
+		     int max = num[0];
+		     int min = num[0]; 
+		     for (int num : num){
+		            if (num > max) {
+		                max = num;
+		            }
+		            if (num < min) {
+		                min = num;
+		            }
+		        }
+		        
+		        System.out.println("Maximum value is: " + max);
+		        System.out.println("Minimum value is: " + min);
+		    }
+		}
+
+
+	
