@@ -1,0 +1,27 @@
+package day4;
+
+import java.util.Scanner;
+
+public class problem3 {
+	public static void main(String[]args) {
+		
+		Scnner sc=new Scnner(System.in);
+		int start=sc.nextInt();
+		int ent=sc.nextInt();
+		int evencount=0;
+		for(int i=start;i<=end;i++)
+		{
+			if(i%2==0)
+			
+			{
+				evencount++;
+			}
+			}
+		System.out.println(evencount);
+		
+		}
+		
+		
+	}
+
+
