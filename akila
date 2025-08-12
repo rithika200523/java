@@ -1,0 +1,19 @@
+package day7;
+
+public class problem4 {
+	public String display()
+	{
+		String name="akila";
+		return name;
+	}
+	public static void main(String[] args) {
+		problem4 obj=new problem4();
+		String res=obj.display();
+		System.out.println(res);
+	}
+	
+	
+	
+	}
+
+
