@@ -1,0 +1,31 @@
+ackage Day9;
+
+interface sum{
+	int max=100;
+	void show();
+	static void Display()
+	
+	{
+		System.out.println("Displaying");
+	}
+	
+	}
+class Myclass implements sum{
+	public void show()
+	{
+		System.out.println("showing");
+	}
+	}
+public class problem3 {
+	
+	public static void main(String[] args) {
+		sum.Display();
+		Myclass obj=new Myclass();
+		obj.show();
+	}
+
+}
+
+
+		
+	
