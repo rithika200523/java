@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class PageDigitsFinder {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        long N = scanner.nextLong();
+        scanner.close();
+
+        
+        int digitLength = 1;
+        long count = N;
+        long pages = 0;
+
+        while (true) {
+            long startPage = (long) Math.pow(10, digitLength - 1);
+            long endPage = (long) Math.pow(10, digitLength) - 1;
+            long pageCount = endPage - startPage + 1;
+
+            long digitsNeeded = pageCount * digitLength;
+
+            if (count <= digitsNeeded) {
+                
+                long pagesInThisRange = count / digitLength;
+                if (count % digitLength != 0) {
+                    pagesInThisRange++; 
+                }
+                pages += pagesInThisRange;
+                break;
+            } else {
+                count -= digitsNeeded;
+                pages += pageCount;
+                digitLength++;
+
+            
+                if (digitLength > 10) {
+                    pages = -1;
+                    break;
+                }
+            }
+        }
+
+        if (pages == 0 || pages == -1) {
+            System.out.println("Impossible!");
+        } else {
+            
+            if (calculateDigits(pages) == N) {
+                System.out.println(pages);
+            } else {
+                System.out.println("Impossible!");
+            }
+        }
+    }
+
+    private static long calculateDigits(long pages) {
+        long digits = 0;
+        int digitLength = 1;
+        long startPage = 1;
+
+        while (startPage <= pages) {
+            long endPage = (long) Math.min(pages, Math.pow(10, digitLength) - 1);
+            long pageCount = endPage - startPage + 1;
+            digits += pageCount * digitLength;
+            startPage = endPage + 1;
+            digitLength++;
+        }
+        return digits;
+    }
+}
