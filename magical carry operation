@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class MagicalCarryOperations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String num1 = scanner.nextLine().trim();
+        String num2 = scanner.nextLine().trim();
+        scanner.close();
+
+        int carry = 0; 
+        int carryCount = 0;
+
+        int i = num1.length() - 1;
+        int j = num2.length() - 1;
+
+        while (i >= 0 || j >= 0) {
+            int digit1 = (i >= 0) ? num1.charAt(i) - '0' : 0;
+            int digit2 = (j >= 0) ? num2.charAt(j) - '0' : 0;
+
+            int sum = digit1 + digit2 + carry;
+
+            if (sum > 9) {
+                carryCount++;
+                carry = 1;
+            } else {
+                carry = 0;
+            }
+
+            i--;
+            j--;
+        }
+
+        System.out.println(carryCount);
+    }
+}
