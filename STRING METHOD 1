@@ -1,0 +1,18 @@
+package day7;
+import java.util.Scanner;
+
+public class problem3 {
+	public void display()
+	{
+		System.out.println("Hii Nice to meet you");
+	}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		{
+			problem3 obj=new problem3();
+			obj.display();
+		}
+		
+	}
+
+}
