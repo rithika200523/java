@@ -1,0 +1,24 @@
+package day8;
+
+public class problem6 {
+	String place="ladakh";
+	String spot1="pangong lake";
+	String spot2="leh place";
+	String spot3="hemis monastry";
+	String spot4="numbra valley";
+	String spot5="khardung la pass";
+	public static void main(String[] args) {
+		problem6 obj=new problem6();
+		System.out.println("place:  ladakh");
+		problem6 obj1=new problem6();
+		System.out.println(obj.spot1);
+		problem6 obj2=new problem6();
+		System.out.println(obj.spot2);
+		problem6 obj3=new problem6();
+		System.out.println(obj.spot3);
+		problem6 obj4=new problem6();
+		System.out.println(obj.spot4);
+		problem6 obj5=new problem6();
+		System.out.println(obj.spot5);
+	}
+}
