@@ -1,0 +1,24 @@
+package day8;
+
+public class problem3 {
+			int rollno=55;
+			String name="rithika";
+			static String collegename="zion";
+			void display(int a,String name)
+			{
+				System.out.println(a+""+ name +""+ collegename);
+			}
+			public static void main(String[] args) {
+				problem3 obj=new problem3();
+				
+				System.out.println("problem3.collegename");				
+				obj.display(35,"kavii");
+				obj.display(34,"rithika");
+				obj.display(33,"akalya");
+				obj.display(32,"bhuvana");
+				obj.display(31,"ragini");
+				obj.display(30,"akila");
+			}
+		}
+	
+
