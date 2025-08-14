@@ -1,0 +1,39 @@
+package Day9;
+
+interface print
+{
+	void display();	
+}
+interface copy
+{
+	void show();
+	
+}
+class xerox implements print,copy
+
+{
+	public void display()
+	{
+		System.out.println("displaying");
+		
+	}
+	public void show()
+	{
+		System.out.println("showing");
+	}
+
+
+
+	public static void main(String[] args) {
+		xerox obj=new xerox();
+		obj.show();
+		obj.display();
+	}
+	}
+	
+		
+		
+			
+	
+
+
