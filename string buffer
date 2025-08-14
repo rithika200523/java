@@ -1,0 +1,16 @@
+package day7;
+
+public class pproblem3 {
+	public static void main(String[] args) {
+		StringBuffer sb=new StringBuffer("Hello world");
+		System.out.println(sb);
+		sb.reverse();
+		System.out.println(sb);
+		sb.split("hello world");
+		System.out.println(sb);
+		
+		
+				
+		
+	}
+}
