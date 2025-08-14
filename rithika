@@ -1,0 +1,22 @@
+package day8;
+
+public class problem4 {
+	int rollno=55;
+	String name="rithika";
+	static String collegename="zion";
+	void display(int a,String name)
+	{
+		System.out.println(a+""+ name +""+ collegename);
+	}
+	public static void Show(int a)
+	{
+		problem4.collegename="Mount Zion";
+		System.out.println(a+ " "+ collegename);
+	}
+	public static void main(String[] args) {
+		problem4. Show(55);
+		problem4 obj=new problem4();
+		obj.display(65,"ragini");
+	}
+
+}
